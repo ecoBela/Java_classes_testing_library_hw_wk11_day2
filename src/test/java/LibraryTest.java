@@ -10,7 +10,7 @@ public class LibraryTest {
     @Before
     public void before(){
         library = new Library(2);
-        book = new Book();
+        book = new Book("Gone With The Wind", "Margaret Mitchell", "Fiction");
     }
     @Test
     public void hasCapacity(){
