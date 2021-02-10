@@ -28,4 +28,12 @@ public class LibraryTest {
         assertEquals(1, library.bookCount());
     }
 
+    @Test
+    public void cannotAddBookIfLibraryFull(){
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        assertEquals(2, library.bookCount());
+    }
+
 }
