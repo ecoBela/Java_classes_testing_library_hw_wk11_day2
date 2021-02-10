@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 
 public class BookTest {
     private Book book;
@@ -19,5 +20,10 @@ public class BookTest {
     @Test
     public void hasAuthor(){
         assertEquals("A.Ripley", book.getAuthor());
+    }
+
+    @Test
+    public void hasGenre(){
+        assertEquals("Fiction", book.getGenre());
     }
 }
